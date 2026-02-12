@@ -15,3 +15,17 @@ function scrollFunction() {
     document.getElementById("navbar").style.borderBottom = "none";
   }
 }
+
+var i = 0;
+var txt = `Hallo mijn naam is S`;
+var speed = 100;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+
+window.onload = typeWriter;

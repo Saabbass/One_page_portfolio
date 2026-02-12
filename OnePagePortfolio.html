@@ -4,19 +4,21 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <!-- Link for Cairo Play font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cairo+Play:wght@200..1000&display=swap" rel="stylesheet">
-  <script src="script.js"></script>
-  <title>Document</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Link for Jersey 10 font -->
   <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+  <!-- JavaScript and CSS use -->
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" async></script>
+  <script src="project_modal.js" async></script>
+  <title>Document</title>
 </head>
 
 <body>
+  <!-- start header -->
   <section id="navbar" class="header_nav">
     <div class="container">
       <div class="container_width">
@@ -27,16 +29,10 @@
           <nav class="right">
             <ul>
               <li>
-                <a href="Over mij"></a>
+                <a href="#skills">Vaardigheden</a>
               </li>
               <li>
-                <a href=""></a>
-              </li>
-              <li>
-                <a href=""></a>
-              </li>
-              <li>
-                <a href=""></a>
+                <a href="#projects">Projecten</a>
               </li>
             </ul>
           </nav>
@@ -45,23 +41,25 @@
       </div>
     </div>
   </section>
+  <!-- einde header -->
 
   <section id="content" class="main_body min_page_heigt">
     <section class="container">
       <div class="right_image_holder">
         <div class="image_mask">
           <div class="mask_text_holder">
-            <h3 class="mask_text_title">Hi mijn naam is S</h3>
-            <p class="mask_text_description">Of het nou backend, frontend of fullstack is, development is mijn tweede taal</p>
+            <h3 class="mask_text_title" id="demo"></h3>
+            <p class="mask_text_description">Of het nou backend, frontend of fullstack is, development is mijn tweede
+              taal.</p>
           </div>
         </div>
         <div class="image_container">
-          <img src="Image_1.png" alt="">
+          <img src="dev3.png" alt="">
         </div>
       </div>
     </section>
 
-    <section class="container">
+    <section class="container" id="skills">
       <div class="container_width">
         <div class="skills_holder">
           <div class="skills_holder_inner">
@@ -139,6 +137,60 @@
       </div>
     </section>
 
+    <section class="container" id="projects">
+      <div class="container_width">
+        <div class="projects_holder">
+          <div class="projects_holder_inner">
+            <h1 class="projects_title">Mijn projecten</h1>
+            <ul class="projects_cards_holder">
+              <li class="project_card">
+                <h6 class="project_name">Blender achtergrond</h6>
+                <div class="project_image">
+                  <img class="myImages" id="myImg" src="dev2.png" alt="">
+                  <div class="image_description">
+                    <a class="image_link" href="">Github repo </a>
+                    <p>Bij dit project heb ik</p>
+                  </div>
+                </div>
+              </li>
+              <li class="project_card">
+                <h6 class="project_name">Blender planeet</h6>
+                <div class="project_image">
+                  <img class="myImages" id="myImg" src="dev3.png" alt="">
+                  <div class="image_description">
+                    <a class="image_link" href="">Github repo</a>
+                    <p>Bij dit project heb ik</p>
+                  </div>
+                </div>
+              </li>
+              <li class="project_card">
+                <h6 class="project_name">Blender auto</h6>
+                <div class="project_image">
+                  <img class="myImages" id="myImg" src="dev4.png" alt="">
+                  <div class="image_description">
+                    <a class="image_link" href="">Github repo</a>
+                    <p>Bij dit project heb ik</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="project_modal" id="projectModal">
+        <div class="close_holder"><span class="close">x</span></div>
+        <div class="modal_content_holder"><img class="modal_content" id="img01"></div>
+        <div id="caption"></div>
+      </div>
+    </section>
+  </section>
+
+  <section>
+    <footer class="footer">
+      <div class="footer_inner">
+        <a href="">&copy; 2026. website made by Saabbass</a>
+      </div>
+    </footer>
   </section>
 </body>
 
